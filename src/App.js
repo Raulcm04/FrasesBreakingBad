@@ -18,18 +18,18 @@ function App() {
 
   useEffect(() => {
     consultarAPI()
-  },[obtenerFrase])
+  }, [obtenerFrase])
 
-  console.log(frase);
-  
+  // console.log(frase);
+
 
   return (
 
     <div className="contenedor">
-    <Frase
-    frase={frase}
-    />
-    <button onClick={consultarAPI} >Generar nueva</button>
+      <Frase
+        frase={frase}
+      />
+      <button onClick={consultarAPI} >Generar nueva</button>
     </div>
   );
 }
